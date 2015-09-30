@@ -45,7 +45,11 @@ body {
   display: table;
   clear: both;
 }
-
+.clearfix {
+  content:"";
+  display: table;
+  clear:both;
+}
 .header {
   background-color: #111;
   color: #fff;
