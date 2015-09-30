@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Azbuka</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400,500,700&subset=latin,cyrillic">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,cyrillic">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.min.css">
@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" media="screen and (min-width: 880px)" href="css/style-desktop.css">
 </head>
-<body>
+<body class="debug">
   <header class="header">
     <div class="wrap">
       <a href="#home" class="logo">A<b>Z</b>BUKA</a>
@@ -26,7 +26,7 @@
   <section class="slideOne" id="home">
     <div class="wrap">
       <div class="slideOne_logo">      
-        <header class="slideOne_pre"><span>AZBUKA</span> образовательная программа</header>
+        <header class="slideOne_pre"></header>
       </div>
       <div class="slideOne_sub">«AZBUKA» — это интерактивная программа обучения для молодых специалистов.</div>
       <a class="btn" href="#">Записаться на курс</a>
@@ -38,7 +38,7 @@
     <header class="slideTwo_header">Погружение в «Брэнд-менеджмент»</header>
   </section>
   <section class="slideThree">
-    <header class="slideThree_header"><span>Запуск курса</span> для <span>бренд-менеджеров</span><span class="slideThree_red">26 октября</span></header>
+    <header class="slideThree_header"><div>Запуск курса</div> для <div>бренд-менеджеров</div><div class="slideThree_red">26 октября</div></header>
     <a class="btn" href="#">Записаться на курс</a>
   </section>
   <section class="slideFour">
@@ -52,41 +52,73 @@
   <section class="slideFive">
     <header class="slideFive_header">Студенты курса работают в проектных группах над кейсами реальных клиентов:</header>
     <div class="slideFive_gallery">
-      <figure><img src="pics/1sm.jpg" alt=""></figure>
-      <figure><img src="pics/2sm.jpg" alt=""></figure>
-      <figure><img src="pics/3sm.jpg" alt=""></figure>
+      <figure><img src="img/company.jpg" alt=""></figure>
+      <figure><img src="img/company.jpg" alt=""></figure>
+      <figure><img src="img/company.jpg" alt=""></figure>
     </div>
   </section>
   <section class="slideSix">
     <header class="slideSix_header">Программа курса</header>
-    <ul class="siderSix_list">
+    <ul class="slideSix_list">
       <li><span>20.10</span>Брендинг, как ключевая часть маркетинга</li>
-      <li><span></span></li>
-      <li><span></span></li>
-      <li><span></span></li>
-      <li><span></span></li>
-      <li><span></span></li>
-      <li><span></span></li>
-      <li><span></span></li>
-      <li><span></span></li>
-      <li><span></span></li>
-      <li><span></span></li>
-      <li><span></span></li>
+      <li><span>20.10</span>Брендинг, как ключевая часть маркетинга</li>
+      <li><span>20.10</span>Брендинг, как ключевая часть маркетинга</li>
+      <li><span>20.10</span>Брендинг, как ключевая часть маркетинга</li>
+      <li><span>20.10</span>Брендинг, как ключевая часть маркетинга</li>
+      <li><span>20.10</span>Брендинг, как ключевая часть маркетинга</li>
+      <li><span>20.10</span>Брендинг, как ключевая часть маркетинга</li>
+      <li><span>20.10</span>Брендинг, как ключевая часть маркетинга</li>
+      <li><span>20.10</span>Брендинг, как ключевая часть маркетинга</li>
+      <li><span>20.10</span>Брендинг, как ключевая часть маркетинга</li>
+      <li><span>20.10</span>Брендинг, как ключевая часть маркетинга</li>
+      <li><span>20.10</span>Брендинг, как ключевая часть маркетинга</li>
     </ul>
-    <header class="slideSix_h">Наши спикеры</header>
-    <div class="slideSix_gallery">
-      <figure>
-        <img src="../pics/.jpg" alt="">
-        <figcaption><b>Алина Ракитина</b> Генеральный директор агентства Azbuka</figcaption>
-      </figure>
-      <figure>
-        <img src="../pics/.jpg" alt="">
-        <figcaption><b>Семён Черноножкин</b> Генеральный директор агентства Azbuka</figcaption>
-      </figure>
-      <figure>
-        <img src="../pics/.jpg" alt="">
-        <figcaption><b>Николай Тихвинский</b> Генеральный директор агентства Azbuka</figcaption>
-      </figure>
+    <header class="slideSix_header slideSix_header--color">Наши спикеры</header>
+    <div class="slideSix_gallery wrap">
+      <div class="slideSix_inner">
+        <a class="slideSix_arrow-left" href=""></a>
+        <div class="slideSix_wrapper clearfix">
+          <div class="slideGroup slideGroup_one">
+            <figure>
+              <img src="http://placehold.it/175x175" width="175" height="175" alt="">
+              <figcaption><b>Алина Ракитина</b> Генеральный директор агентства Azbuka</figcaption>
+            </figure>
+            <figure>
+              <img src="http://placehold.it/175x175" width="175" height="175" alt="">
+              <figcaption><b>Семён Черноножкин</b> Генеральный директор агентства Azbuka</figcaption>
+            </figure>
+            <figure>
+              <img src="http://placehold.it/175x175" width="175" height="175" alt="">
+              <figcaption><b>Николай Тихвинский</b> Генеральный директор агентства Azbuka</figcaption>
+            </figure>
+          </div>
+          <div class="slideGroup slideGroup_two">
+            <figure>
+              <img src="http://placehold.it/175x175" width="175" height="175" alt="">
+              <figcaption><b>Алина Ракитина0</b> Генеральный директор агентства Azbuka</figcaption>
+            </figure>
+            <figure>
+              <img src="../pics/.jpg" alt="">
+              <figcaption><b>Алина Ракитина1</b> Генеральный директор агентства Azbuka</figcaption>
+            </figure>
+            <figure>
+              <img src="../pics/.jpg" alt="">
+              <figcaption><b>Алина Ракитина2</b> Генеральный директор агентства Azbuka</figcaption>
+            </figure>
+          </div>
+          <div class="slideGroup slideGroup_three">
+            <figure>
+              <img src="../pics/.jpg" alt="">
+              <figcaption><b>Алина Ракитина3</b> Генеральный директор агентства Azbuka</figcaption>
+            </figure>
+            <figure>
+              <img src="../pics/.jpg" alt="">
+              <figcaption><b>Алина Ракитина4</b> Генеральный директор агентства Azbuka</figcaption>
+            </figure>
+          </div>
+        </div>
+        <a class="slideSix_arrow-right" href=""></a>
+      </div>
     </div>
   </section>
   <section class="slideSeven">
