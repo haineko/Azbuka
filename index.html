@@ -102,31 +102,38 @@
     <header class="slideSeven_headerSub">До повышения цен <span>осталось 3 дня</span></header>
   </section>
   <section class="slideEight" id="form">
-    <header class="slideEight_header">Для регистрации <span class="red">оставьте заявку.</span></header>
-    <header class="slideEight_headerSub">С вами свяжется организатор для подтверждения.</header>
-    <form action="/">
-      <div class="slideEight_form">
-        <label for="f_name">Имя</label>
-        <input id="f_name" type="text" placeholder="Введите имя">
-        <label for="f_tel">Телефон</label>
-        <input type="tel" placeholder="Введите номер">
-        <label for="f_mail">E-mail</label>
-        <input type="email" placeholder="Введите почту">
-        <label for="f_message">Сообщение</label>
-        <textarea name="f_message" id="f_message" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
-      </div>
-      <input class="btn btn-submit" type="submit" value="Бросить вызов системе">
-    </form>
+    <div class="wrap">
+      <header class="slideEight_header">Для регистрации <span class="red">оставьте заявку.</span></header>
+      <header class="slideEight_headerSub">С вами свяжется организатор для подтверждения.</header>
+      <form class="callback"action="/">
+        <div class="slideEight_form">
+          <label for="f_name">Имя</label>
+          <input id="f_name" type="text" placeholder="Введите имя">
+          <label for="f_tel">Телефон</label>
+          <input type="tel" placeholder="Введите номер">
+          <label for="f_mail">E-mail</label>
+          <input type="email" placeholder="Введите почту">
+          <label for="f_message">Сообщение</label>
+          <textarea name="f_message" id="f_message" cols="30" rows="10" placeholder="Введите сообщение"></textarea>
+        </div>
+        <input class="btn btn-submit" type="submit" value="Бросить вызов системе">
+      </form>
+    </div>
   </section>
   <footer class="footer">
     <div class="footer_left">
-      <!-- map -->
+      <img class="footer_map" style="width:100%; height: 530px;" src="./img/map.jpg" alt="Карта">
     </div>
     <div class="footer_right">
       <h4 class="footer_header">Лермонтовский пр., 44, Санкт-Петербург, Россия, 190103</h4>
       <p class="sp">Куратор Курса: Алина Жданова<br>
         Контактный телефон : 8 (981) 970 34 46</p>
-      <p><a href="https://twitter.com/hashtag/azbukapro">#azbukapro</a></p>
+      <a class="footer_link" href="https://twitter.com/hashtag/azbukapro">#azbukapro</a>
+      <div class="social">
+        <a href="" class="social_btn social_btn-vk">Вконтакте</a>
+        <a href="" class="social_btn social_btn-inst">Инстаграм</a>
+        
+      </div>
     </div>
   </footer>
 </body>
