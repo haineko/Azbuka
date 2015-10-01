@@ -159,14 +159,14 @@ $(document).ready(function() {
             switch (this.dataset.direction) {
                 case "left":
                     if (currentInputIndex == 0) {
-                        inputNav[inputCount - 1].checked = true;
+                        inputNav[inputCount ].checked = true;
                         console.log("test0");
                     } else {
                         inputNav[currentInputIndex - 1].checked = true;
                         console.log("test1");
                     }
                     break;
-
+                
                 case "right":
                     if ((inputCount - 1) == currentInputIndex) {
                         inputNav[0].checked = true;
