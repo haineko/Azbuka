@@ -70,14 +70,24 @@ body {
 .logo {
   font: 15px Intro;
   float: left;
+  margin: 2px 0;
   margin-left: 20px;
   width: 115px;
-  padding: 7px 0;
+  padding: 8px 0;
   line-height: 20px;
   text-indent: 100%;
   overflow: hidden;
   white-space: nowrap;
   background: url("../img/logo.png") no-repeat 50%/cover;
+}
+
+.logo:hover {
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px 0;
+  width: 124px;
+  transition: all 0.5s linear;
 }
 
 .logo > b {
@@ -95,7 +105,7 @@ body {
   display: inline-block;
   margin-left: 55px;
   font-size: 18px;
-  line-height: 2;
+  line-height: 2.3;
   font-weight: 700;
 }
 
@@ -109,6 +119,7 @@ body {
 
 .headerNav > a:hover {
   color: #ce2053;
+  transition: all 0.5s linear;
 }
 
 .slideOne {
@@ -142,15 +153,17 @@ body {
   font-weight: 700;
   text-decoration: none;
   border: 3px solid #fff;
-  transition: all 2s easy;
+  
 }
 
 .btn:hover {
   border: 3px solid #ce2053;
+  transition: all 0.5s ease;
 }
 
 .btn:active {
-  color: #ce2053;
+  background-color: #ce2053;
+  transition: all 0.3s linear;
 }
 
 .slideTwo {
@@ -246,6 +259,29 @@ body {
   margin: 0;
   height: 102px;
 }
+
+.slideFive_gallery figure img {
+-webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; 
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.slideFive_gallery figure img:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  filter: none;
+}
+
 .slideSix {
   text-align: center;
 }
@@ -423,6 +459,7 @@ body {
   font-weight: 400;
   text-align: center;
   background-color: #d7d7d7;
+  animation: we 1s infinite alternate;
 }
 
 .slideEight {
@@ -501,6 +538,7 @@ input[type="email"]:focus,
 textarea:focus {
   font-weight: 400;
   border: 2px solid #ce2053;
+  transition: all 0.5s linear;
 }
 
 input[type="text"]::-webkit-input-placeholder { font-family:  "Roboto", "Arial", sans-serif; font-weight: 100; }
