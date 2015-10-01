@@ -118,10 +118,13 @@ body {
 }
 
 .headerNav > a:hover {
+  color: #c1c1c1;
+  transition: all 0.5s linear;
+}
+.headerNav > a:active {
   color: #ce2053;
   transition: all 0.5s linear;
 }
-
 .slideOne {
   padding: 130px 0 85px;
   color: #fff;
@@ -286,7 +289,9 @@ body {
 .slideSix {
   text-align: center;
 }
+
 .slideSix_header {
+  margin-bottom: 60px;
   padding: 50px 0;
   color:#fff;
   background-color: #2d2d2d;
@@ -294,37 +299,61 @@ body {
   font-weight: 400;
 }
 .slideSix_list {
-  margin: 0 auto;
-  width: 960px;
+  margin: 0 10px;
+  width: 300px;
+  float: left;
   font-size: 0;
   padding: 0;
   text-align: left;
 }
 .slideSix_list li {
+  position: relative;
   vertical-align: top;
   display: inline-block;
   color: #000;
   font: 18px Roboto, Arial, sans-serif;
   font-weight: 100;
-  width:300px;
+  width: 300px;
   margin: 0 10px;
-  text-align: center;
+  padding-top: 19px;
+  min-height: 95px;
+  padding-left: 72px;
 }
 .slideSix_list li span {
-  font: 16px Roboto, Arial, sans-serif;
-  font-weight: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 61px;
+  height: 45px;
+  font: 18px Roboto, Arial, sans-serif;
+  line-height: 45px;
+  text-align: center;
+  font-weight: 500;
   background-color: #d12148;
-  box-shadow:
-  1px 0px rgb(209,33,72), 1px 1px rgb(209,33,72),
-  2px 1px rgb(209,33,72), 2px 2px rgb(209,33,72),
-  3px 2px rgb(209,33,72), 3px 3px rgb(209,33,72),
-  4px 3px rgb(209,33,72), 4px 4px rgb(209,33,72),
-  5px 4px rgb(209,33,72), 5px 5px rgb(209,33,72),
-  6px 5px rgb(209,33,72), 6px 6px rgb(209,33,72),
-  7px 6px rgb(209,33,72), 7px 7px rgb(209,33,72),
-  8px 7px rgb(209,33,72), 8px 8px rgb(209,33,72);
   margin-right: 15px;
   color:#fff;
+}
+.slideSix_list li span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 12px 15px 0;
+  border-color: transparent #fff transparent transparent;
+}
+.slideSix_list li span::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0 0 12px;
+border-color: transparent transparent transparent #fff;
 }
 .slideSix_header--color {
   color:#000;
@@ -597,8 +626,12 @@ textarea:-ms-input-placeholder { font-family:  "Roboto", "Arial", sans-serif;  f
   color: #ce2053;
   background-color: transparent;
   border: 3px solid #ce2053;
+  outline: none;
 }
-
+.btn-submit:hover {
+  color: #fff;
+  background-color: #ce2053;
+}
 .footer {
   padding-bottom: 90px;
   color: #fff;
@@ -661,6 +694,14 @@ textarea:-ms-input-placeholder { font-family:  "Roboto", "Arial", sans-serif;  f
   line-height: 0;
 }
 
+.social_btn:hover {
+  background-color: #6e605c;
+}
+
+.social_btn:active {
+  background-color: #655754;
+}
+
 .social_btn-vk {
   background: #7a6b67 url("../img/icon-vk.png") no-repeat 50%;
 }
@@ -668,7 +709,18 @@ textarea:-ms-input-placeholder { font-family:  "Roboto", "Arial", sans-serif;  f
 .social_btn-inst {
   background: #7a6b67 url("../img/icon-inst.png") no-repeat 50%;
 }
-
+.social_link {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #fff;
+  vertical-align: bottom;
+  text-decoration: none;
+}
+.social_link:hover,
+.footer_link:hover{
+  color: #d12148;
+}
 @keyframes shake {
   0%, 100% {
     transform: rotate(0);
