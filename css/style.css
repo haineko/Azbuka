@@ -354,15 +354,15 @@ border-color: transparent transparent transparent #fff;
 }
 .slideSix_gallery {
   margin-bottom: 85px;
-  width: 300%;
+  width: 960px;
 }
 .slideSix_gallery input[type="radio"] {
-  display: inline-block;
+  display: none;
   }
 .slideSix_inner {
   position: relative;
   height: 280px;
-  width: 33.3%;
+  width: 100%;
 }
 .slideSix_wrapper {
   width: 300%;
@@ -728,29 +728,6 @@ textarea:-ms-input-placeholder { font-family:  "Roboto", "Arial", sans-serif;  f
 .social_link:hover,
 .footer_link:hover{
   color: #d12148;
-}
-@keyframes shake {
-  0%, 100% {
-    transform: rotate(0);
-  }
-  10%, 30%, 50%, 70%, 90% {
-    transform: rotate(5deg);
-  }
-  20%, 40%, 60%, 80% {
-    transform: rotate(-5deg);
-  }
-}
-
-@keyframes marker {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  10%, 30%, 50%, 70%, 90% {
-    transform: translateX(15px);
-  }
-  20%, 40%, 60%, 80% {
-    transform: translateX(-15px);
-  }
 }
 
 @keyframes we {
