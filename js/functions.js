@@ -137,3 +137,46 @@ $(document).ready(function() {
 		return rv;
 	};
 });
+
+
+
+
+
+
+
+;(function() {
+    var linkArrow = document.querySelectorAll(".slideSix_arrows");
+    var inputNav = document.querySelectorAll('[name^="r-toggle"]');
+
+
+    for (var i = 0; i < linkArrow.length; i++) {
+        linkArrow[i].addEventListener('click', function(e) {
+            e.preventDefault();
+            var currentInput = document.querySelector(".slideSix_gallery input:checked");
+            var currentInputIndex = [].indexOf.call(inputNav, currentInput);
+            var inputCount = inputNav.length;
+            console.log("Работает");
+            switch (this.dataset.direction) {
+                case "left":
+                    if (currentInputIndex == 0) {
+                        inputNav[inputCount - 1].checked = true;
+                        console.log("test0");
+                    } else {
+                        inputNav[currentInputIndex - 1].checked = true;
+                        console.log("test1");
+                    }
+                    break;
+
+                case "right":
+                    if ((inputCount - 1) == currentInputIndex) {
+                        inputNav[0].checked = true;
+                        console.log("test3");
+                    } else {
+                        inputNav[currentInputIndex + 1].checked = true;
+                        console.log("test4");
+                    }
+                    break;
+            }
+        });
+    }
+})();
