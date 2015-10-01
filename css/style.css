@@ -328,7 +328,7 @@ body {
   width: 300%;
 }
 .slideSix_gallery input[type="radio"] {
-  display: inline-block;
+  display: none;
   }
 .slideSix_inner {
   position: relative;
