@@ -116,11 +116,11 @@ body {
 .slideOne_pre {
   margin: 0 auto 35px;
   padding: 130px 0;
-  width: 755px;
+  width: 635px;
   text-indent: 100%;
   overflow: hidden;
   white-space: nowrap;
-  background: url("../img/bg-slideOne_pre.png") no-repeat 100%/cover;
+  background: url("../img/bg-slideOne_pre.png") no-repeat top/100%;
 }
 
 .slideOne_sub {
