@@ -257,6 +257,8 @@ body {
 .slideFive_gallery {
   font-size: 0;
   text-align: center;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 .slideFive_gallery figure {
@@ -283,6 +285,7 @@ body {
 .slideFive_gallery figure:nth-child(4) img,
 .slideFive_gallery figure:nth-child(3) img{
   opacity: 0.7;
+  margin-top: 10px;
 }
 .slideFive_gallery figure:nth-child(4) img:hover,
 .slideFive_gallery figure:nth-child(3) img:hover {
