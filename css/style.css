@@ -81,7 +81,7 @@ body {
 
 .headerNav > a {
   display: inline-block;
-  margin-left: 55px;
+  margin-left: 65px;
   font-size: 18px;
   line-height: 2.3;
   font-weight: 700;
@@ -89,10 +89,6 @@ body {
 
 .headerNav > a:first-of-type {
   margin-left: 0;
-}
-
-.headerNav > a:last-of-type {
-  margin-left: 100px;
 }
 
 .headerNav > a:hover {
@@ -265,10 +261,10 @@ body {
 
 .slideFive_gallery figure {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: bottom;
   width:330px;
   margin: 0;
-  height: 102px;
+  min-height: 110px;
 }
 
 .slideFive_gallery figure img {
@@ -284,7 +280,14 @@ body {
   filter: none; 
     -webkit-filter: grayscale(0);
 }
-
+.slideFive_gallery figure:nth-child(4) img,
+.slideFive_gallery figure:nth-child(3) img{
+  opacity: 0.7;
+}
+.slideFive_gallery figure:nth-child(4) img:hover,
+.slideFive_gallery figure:nth-child(3) img:hover {
+  opacity: 1;
+}
 .slideSix {
   text-align: center;
 }
@@ -378,20 +381,19 @@ body {
 
 .slideSix_inner {
   position: relative;
-  height: 280px;
-  width: 100%;
-}
-
-.slideSix_wrapper {
-  width: 300%;
+  min-height: 280px;
+  width: 750px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .slideGroup {
-  display: none;
   position: relative;
-  height: 280px;
+  min-height: 280px;
   z-index: 1;
-  width: 100%;
+}
+.slideGroup_slide {
+  width:300%;
 }
 
 .slideGroup figure {
@@ -404,7 +406,7 @@ body {
 }
 
 .slideGroup figure img {
-  border: 2px solid #d12148;
+  border: 3px solid #d12148;
   border-radius: 50%;
 }
 
@@ -416,20 +418,42 @@ body {
   display: block;
 }
 
-#btn-1:checked ~ .slideSix_inner .slideGroup:nth-child(1) {
-  display: block;
+#btn-1:checked ~ .slideSix_inner .slideGroup {
+  transition: 0.3s linear;
+  transform:translateX(-100px);
 }
-#btn-2:checked ~ .slideSix_inner .slideGroup:nth-child(2) {
-  display: block;
+#btn-2:checked ~ .slideSix_inner .slideGroup {
+  transition: 0.3s linear;
+  transform:translateX(-354px);
+
 }
-#btn-3:checked ~ .slideSix_inner .slideGroup:nth-child(3) {
-  display: block;
+#btn-3:checked ~ .slideSix_inner .slideGroup {
+  transition: 0.3s linear;
+  transform:translateX(-608px);
+
+}
+#btn-4:checked ~ .slideSix_inner .slideGroup {
+  transition: 0.3s linear;
+  transform:translateX(-862px);
+}
+#btn-5:checked ~ .slideSix_inner .slideGroup {
+  transition: 0.3s linear;
+  transform:translateX(-1130px);
+
+}
+#btn-6:checked ~ .slideSix_inner .slideGroup {
+  transition: 0.3s linear;
+  transform:translateX(-1395px);
+
 }
 
+.slideSix_arrows {
+  position: relative;
+}
 .slideSix_arrow-left {
   content: '';
   position: absolute;
-  top: 87px;
+  top: -190px;
   left: 30px;
   width: 24px;
   height: 24px;
@@ -445,7 +469,7 @@ body {
 .slideSix_arrow-right {
   content: '';
   position: absolute;
-  top: 87px;
+  top: -190px;
   right: 30px;
   width: 24px;
   height: 24px;
