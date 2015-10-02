@@ -157,7 +157,7 @@ $(document).ready(function() {
             switch (this.dataset.direction) {
                 case "left":
                     if (currentInputIndex == 0) {
-                        inputNav[inputCount - 1].checked = true;
+                        inputNav[inputCount - 1].checked = false;
                     } else {
                         inputNav[currentInputIndex - 1].checked = true;
                     }
@@ -165,7 +165,7 @@ $(document).ready(function() {
                 
                 case "right":
                     if ((inputCount - 1) == currentInputIndex) {
-                        inputNav[0].checked = true;
+                        inputNav[0].checked = false;
                     } else {
                         inputNav[currentInputIndex + 1].checked = true;
                     }

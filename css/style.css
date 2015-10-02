@@ -283,12 +283,12 @@ body {
     -webkit-filter: grayscale(0);
 }
 .slideFive_gallery figure:nth-child(4) img,
-.slideFive_gallery figure:nth-child(3) img{
-  opacity: 0.7;
+.slideFive_gallery figure:nth-child(3) img {
+  opacity: 0.8;
   margin-top: 10px;
 }
 .slideFive_gallery figure:nth-child(4) img:hover,
-.slideFive_gallery figure:nth-child(3) img:hover {
+.slideFive_gallery figure:nth-child(3) img:hover{
   opacity: 1;
 }
 .slideSix {
