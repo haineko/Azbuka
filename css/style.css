@@ -110,12 +110,13 @@ body {
   color: #fff;
   text-align: center;
   background: url("../img/bg-slideOne.jpg") no-repeat 50%/cover;
+  background-color: #535353;
 }
 
 .slideOne_pre {
   margin: 0 auto 35px;
   padding: 130px 0;
-  width: 750px;
+  width: 755px;
   text-indent: 100%;
   overflow: hidden;
   white-space: nowrap;
