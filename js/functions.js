@@ -156,7 +156,7 @@ $(document).ready(function() {
             var inputCount = inputNav.length;
             switch (this.dataset.direction) {
                 case "left":
-                    if (currentInputIndex == 0) {
+                    if (currentInputIndex === 0) {
                         inputNav[inputCount - 1].checked = false;
                     } else {
                         inputNav[currentInputIndex - 1].checked = true;
