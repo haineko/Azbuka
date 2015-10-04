@@ -164,7 +164,7 @@ $(document).ready(function() {
                     break;
                 
                 case "right":
-                    if ((inputCount - 1) == currentInputIndex) {
+                    if ((inputCount - 1) === currentInputIndex) {
                         inputNav[0].checked = false;
                     } else {
                         inputNav[currentInputIndex + 1].checked = true;
