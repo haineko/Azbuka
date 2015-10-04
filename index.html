@@ -182,5 +182,12 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="js/grayscale.js"></script>
   <script src="js/functions.js"></script>
+  <script>
+    var slide1 = document.querySelector('.slideOne');
+    window.addEventListener('scroll', function() {
+      var y = window.pageYOffset/1.5;
+      slide1.style.backgroundPositionY = y + 'px';
+    });
+  </script>
 </body>
 </html>
